@@ -1,0 +1,25 @@
+# Core training
+# Unsloth installation depends on your CUDA version — do NOT pip install this line directly.
+# See https://docs.unsloth.ai/get-started/installing-+-updating-unsloth for the right wheel.
+# Example for CUDA 12.1 + PyTorch 2.4:
+#   pip install "unsloth[cu121-torch240] @ git+https://github.com/unslothai/unsloth.git"
+# Install remaining deps after unsloth:
+trl>=0.8.0
+transformers>=4.45.0
+peft>=0.10.0
+datasets>=2.18.0
+
+# Audio / vision
+librosa>=0.10.0
+Pillow>=10.0.0
+opencv-python
+soundfile
+
+# Data prep
+retina-face
+tqdm
+pandas
+numpy
+
+# Utilities
+yt-dlp

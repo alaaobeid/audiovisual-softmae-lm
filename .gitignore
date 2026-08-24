@@ -1,0 +1,32 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.egg-info/
+
+# datasets — not redistributable
+uniformage_av/
+boundary_500_dataset/
+balanced_1000_dataset/
+idiapage_dataset/
+kanav_dataset/
+video_segments/
+idiapage_processed*/
+dlib_models/
+
+# model outputs (checkpoint/ is explicitly included)
+output/
+
+# slurm logs and job scripts
+logs/
+*.sh
+
+# unsloth compiled cache
+unsloth_compiled_cache/
+
+# results — keep metrics JSONs, not raw prediction CSVs
+results/*.csv
+
+# misc
+.DS_Store
+*.log
